@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пугачова Світлана</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Левый блок -->
+    <div class="left-block">
+      
+      <!-- Фото -->
+      <img src="Photo1.png" alt="Фото" class="photo-placeholder">
+      <!-- Имя -->
+      <h1>Світлана Пугачова</h1>
+      <!-- Мини-блок "Про себе" -->
+      <div class="mini-block">
+        <h2>Про себе</h2>
+        <p>Спеціаліст вищої категорії </p>
+        <p>Педагогічне звання - "старший вчитель" </p>
+        <p>Стаж роботи на посаді - 7років </p>
+        <p>Педагогічний стаж - 25 років</p></p></div>
+      <!-- Мини-блок "Контакты" -->
+      <div class="mini-block">
+        <h2>Контакти для зворотного зв'язку</h2>
+        <p><strong>📞 Телефон:</strong> 
+          <span class="copy-box" onclick="copyText('+380995660193')">+380 99 566 01 93</span>
+        </p>
+        <p><strong>💬 Viber:</strong> ✅ Є у Viber</p>
+        <p><strong>💬 Telegram:</strong> ✅ Є у Telegram</p>
+      </div>
+    </div>
+    
+    <!-- Средний блок -->
+    <div class="middle-block">
+      <h1>Основні завдання та напрямки роботи</h1>
+        <div class="mini-block">
+        <h2></h2>
+        <p>- діагностичне обстеження мовлення дітей</p>
+<p>- усунення порушень звуковимови, лексико- граматичної сторони мовлення, формування зв'язного мовлення</p>
+<p>- робота з фонетико-фонематичною стороною мовлення</p>
+<p>- консультативний супровід батьків та педагогів</p>
+<p>- корекційно-розвиткові заняття</p>
+      </div>
+<div class="button-group">
+      <button class="menu-btn" onclick="showBlock()">Організація роботи</button>
+      <button class="menu-btn" onclick="err()">Методичне забезпечення</button>
+      <button class="menu-btn" onclick="err()">Практична діяльність</button>
+      <button class="menu-btn" onclick="err()">Корисні поради для батьків</button>
+      <a href="page.html" class="menu-btn">Досягнення</a>
+      <button class="menu-btn" onclick="err()">Галерея</button>
+    </div>
+        </div>
+
+    <!-- Правый блок -->
+    <div class="right-block">
+      <div class="image-placeholder">
+      <img src="im/title_1.png">
+      </div>
+      <div class="image-placeholder">
+      <img src="im/title_2.png">
+      </div>
+      <div class="image-placeholder">
+      <img src="im/title_3.png">
+      </div>
+    </div>
+
+  <!-- Контейнер с iframe-блоком -->
+  <div class="overlay" id="overlay">
+    <div class="block">
+      <button class="close-btn" onclick="hideBlock()">×</button>
+      <h1>Організація роботи</h2>
+      <iframe src="organiz_rob.html" width="100%" height="500"></iframe>
+    </div>
+  </div>
+</div>

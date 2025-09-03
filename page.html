@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дипломи</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+/* Дипломы в сетке 2х2 */
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+/* Блок диплома */
+.mini-block {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.mini-block:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Контейнер под картинку диплома */
+.image-placeholder {
+  width: 100%;
+  height: 280px;              /* фиксированная высота блока */
+  background: #eee;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;        /* центрируем по вертикали */
+  justify-content: center;    /* центрируем по горизонтали */
+  overflow: hidden;           /* лишнее обрезается */
+  margin-bottom: 15px;
+}
+
+/* Сами картинки дипломов */
+.image-placeholder img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;        /* вписываем без искажений */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-placeholder img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Дипломи та сертифікати</h1>
+
+    <div class="main-container">
+      <div class="mini-block">
+        <h2>Сертифікат</h2>
+        <div class="image-placeholder">
+          <img src="diploma1.jpg" alt="Диплом 1" onclick="window.open('diploma1.jpg', '_blank')">
+        </div>
+        <p>Логопедичний масаж</p>
+      </div>
+
+      <div class="mini-block">
+        <h2>Сертифікат</h2>
+        <div class="image-placeholder">
+          <img src="diploma2.jpg" alt="Диплом 2" onclick="window.open('diploma2.jpg', '_blank')">
+        </div>
+        <p>Нейрокорекція</p>
+      </div>
+
+      <div class="mini-block">
+        <h2>Сертифікат</h2>
+        <div class="image-placeholder">
+          <img src="diploma3.jpg" alt="Диплом 3" onclick="window.open('diploma3.jpg', '_blank')">
+        </div>
+        <p>Кінезіологічне тейпування в логопедії</p>
+      </div>
+
+      <div class="mini-block">
+        <h2>Подяка</h2>
+        <div class="image-placeholder">
+          <img src="diploma4.jpg" alt="Диплом 4" onclick="window.open('diploma4.jpg', '_blank')">
+        </div>
+        <p>Подяка Лозівської міської ради</p>
+      </div>
+
+      <div class="mini-block">
+        <h2>Сертифікат автора</h2>
+        <div class="image-placeholder">
+          <img src="diploma5.jpg" alt="Диплом 5" onclick="window.open('diploma5.jpg', '_blank')">
+        </div>
+        <p>Перемога в конкурсі</p>
+      </div>
+
+        <div class="mini-block">
+        <h2>Дипломи, сертифікати</h2>
+        <div class="image-placeholder">
+          <img src="diploma6.jpg" alt="Диплом 6" onclick="window.open('diploma6.jpg', '_blank')">
+        </div>
+        <p>Дипломи, сертифікати</p>
+      </div>
+
+      <footer>
+    © 2025 Усі права захищені
+  </footer>
+</body>
+</html>
