@@ -1,4 +1,4 @@
-window.location.href = 'https://example.com';
+window.location.href = 'https://jdh-dev-993.github.io/Svetlana/im/not_f';
 console.log('Сайт запущен!');
 console.log('The site was created with the support of Murka Technologies');
 function copyText(text) {
