@@ -56,7 +56,7 @@ def render_cube(size, angles):
     cx, cy = SIZE // 2, SIZE // 2
     pixel_verts = [(round(x) + cx, round(y) + cy) for x, y in verts2d]
 
-    field = [["-"] * SIZE for _ in range(SIZE)]
+    field = [[" "] * SIZE for _ in range(SIZE)]
     for a, b in EDGES:
         draw_line(field, pixel_verts[a], pixel_verts[b])
 
